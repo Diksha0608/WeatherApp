@@ -1,11 +1,12 @@
+import { BrowserRouter } from "react-router-dom"
 import "./App.css"
-import { Button } from "@/components/ui/button"
+import { Layout } from "lucide-react"
 
 function App() {
   return (
-    <div className="flex min-h-svh flex-col items-center justify-center">
-      <Button variant="destructive">Click me</Button>
-    </div>
+   <BrowserRouter>
+   <Layout>Hello Diksha</Layout>
+   </BrowserRouter>
   )
 }
 
