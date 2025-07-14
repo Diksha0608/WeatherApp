@@ -1,6 +1,6 @@
-import React, { type PropsWithChildren } from 'react'
+import  { type PropsWithChildren } from 'react'
 
-const layout = ({children}:PropsWithChildren) => {
+const Layout = ({children}:PropsWithChildren) => {
   return (
     <div className="bg-gradient-to-br from-background to-muted" >
      header
@@ -9,10 +9,18 @@ const layout = ({children}:PropsWithChildren) => {
         {children}
 
       </main>
-      footer
+      
+      <footer>
+        <div>
+          <p className="border-t backdrop-blur">
+            <div className=''></div>
+            Make with ❤️
+          </p>
+        </div>
+      </footer>
 
     </div>
   )
 }
 
-export default layout
+export default Layout

@@ -1,11 +1,13 @@
 import { BrowserRouter } from "react-router-dom"
 import "./App.css"
-import { Layout } from "lucide-react"
+import Layout from "./components/layout"
 
 function App() {
   return (
    <BrowserRouter>
-   <Layout>Hello Diksha</Layout>
+<Layout>
+  hello
+</Layout>
    </BrowserRouter>
   )
 }
