@@ -10,13 +10,10 @@ const Layout = ({children}:PropsWithChildren) => {
 
       </main>
       
-      <footer>
-        <div>
-          <p className="border-t backdrop-blur">
-            <div className=''></div>
-            Make with ❤️
-          </p>
-        </div>
+      <footer className="border-t backdrop-blur py-12 supports-[backdrop-filter]:bg-background/60">
+            <div className='container mx-auto px-4 text-center text-gray-200'>
+            <p> Make with ❤️</p> 
+            </div>
       </footer>
 
     </div>
