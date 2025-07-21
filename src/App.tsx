@@ -1,14 +1,19 @@
-import { BrowserRouter } from "react-router-dom"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
 import "./App.css"
-import Layout from "./components/layout"
+
 import { ThemeProvider } from "./context/theme-provider"
+import Layout from "./components/Layout"
 
 function App() {
   return (
     <BrowserRouter>
       <ThemeProvider defaultTheme="dark">
         <Layout>
-          hello
+          <Routes>
+            <Route path='/' element={} />
+
+           
+          </Routes>
         </Layout>
       </ThemeProvider>
 
