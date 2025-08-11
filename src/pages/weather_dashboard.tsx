@@ -41,6 +41,22 @@ return <WeatherSkeleton/>
       </Alert>
     );
   }
+
+  if(!coordinates){
+return (
+    <Alert variant="destructive">
+        <AlertTriangle className="h-4 w-4" />
+        <AlertTitle>Location Required</AlertTitle>
+        <AlertDescription className="flex flex-col gap-4">
+          <p>Please enable location access to see your location access Weather</p>
+          <Button variant="outline" onClick={getLocation} className="w-fit">
+            <MapPin className="mr-2 h-4 w-4" />
+            Enable Location
+          </Button>
+        </AlertDescription>
+      </Alert>
+);
+  }
    
 
   return (
