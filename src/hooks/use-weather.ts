@@ -30,7 +30,7 @@ export function useReverseGeocodeQuery(coordinates: Coordinates | null) {
   return useQuery({
     queryKey: WEATHER_KEYS.location(coordinates ?? { lat: 0, lon: 0 }),
     queryFn: () =>
-      coordinates ? weatherAPI.reverseGeoCode(coordinates) : null,
+      coordinates ? weatherAPI.reverseGeocode(coordinates) : null,
     enabled: !!coordinates,
   });
 }
